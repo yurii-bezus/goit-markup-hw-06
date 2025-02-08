@@ -15,6 +15,7 @@ ol {
 
 a {
   text-decoration: none;
+font-style: normal;
 }
 button {
   cursor: pointer;
@@ -283,6 +284,7 @@ font-weight: 700;
 }
 
 .mobile-contacts-list {
+    margin-bottom: 48px;
 }
 
 .mobile-contacts-item {
@@ -296,6 +298,7 @@ font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    
 }
 .mobile-contacts-item:not(:last-child){
     margin-bottom: 24px;
@@ -305,15 +308,27 @@ font-weight: 500;
 }
 
 .mobile-menu-soc-list {
+    display: flex;
+    gap: 40px;
+    justify-content:center;
 }
 
 .mobile-menu-soc-item {
 }
 
 .mobile-menu-soc-link {
+    width: 40px;
+        height: 40px;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-soc-icon {
+    fill: #f4f4fd;
 }
 
 .mobile-menu-item {
