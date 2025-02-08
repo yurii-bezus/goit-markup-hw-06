@@ -49,30 +49,44 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-heroicons"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu is-open">
+      <div class="mobile-menu" data-menu>
         <div class="mobile-menu-container">
-          <button type="button" class="mobile-menu-close">
+          <button type="button" class="mobile-menu-close" data-menu-close>
             <svg class="mobile-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
           </button>
-          <nav class="monile-nav">
-            <ul class="monile-nav-list">
-              <li class="monile-nav-item">Studio</li>
-              <li class="monile-nav-item">Portfolio</li>
-              <li class="monile-nav-item">Contacts</li>
+          <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">Contacts</a>
+              </li>
             </ul>
           </nav>
           <address class="mobile-contacts">
             <ul class="mobile-contacts-list">
-              <li class="mobile-contacts-item">+11 (000) 111-11-11</li>
-              <li class="mobile-contacts-item">info@devstudio.com</li>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="tel:+110001111111"
+                  >info@devstudio.com</a
+                >
+              </li>
             </ul>
           </address>
           <ul class="mobile-menu-soc-list">
@@ -597,5 +611,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
