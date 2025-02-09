@@ -7,16 +7,7 @@
 
 
 
-@media screen and (min-width: 1158px) {
-  .team-list {
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
 
-  .team-item {
-    width: calc((100% - 72px) / 4);
-  }
-}
 
 
 
@@ -69,7 +60,18 @@
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
+.portfolio-subtitle{
+margin-bottom: 8px;
+letter-spacing: 0.02em;
+color: #2e2f42;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+}
+.portfolio-text{
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;}
 /* footer */
 .page-footer {
   background-color: #2e2f42;

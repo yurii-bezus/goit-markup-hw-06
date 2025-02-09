@@ -62,8 +62,9 @@ img {
   margin: 0 auto;
 }
 .team .container {
-  max-width: 264px;
+    max-width: 264px;
 }
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -77,6 +78,10 @@ img {
   .container {
     max-width: 1158px;
     padding: 0 15px;
+  }
+  .team .container,
+  .footer .container{
+    max-width: 1158px;
   }
 }
 /* header */
@@ -453,23 +458,28 @@ img {
 .benefits-container {
   display: none;
 }
-.subtitles {
-  margin-bottom: 8px;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+.benefits-subtitle{
+    margin-bottom: 8px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    font-size: 36px;
+        line-height: 1.11;
+        color: #2e2f42;
 }
-.texts {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.benefits-text {
+font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 500;
 }
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+
+}
+.benefits-item{
+    width: 100%;
 }
 @media screen and (min-width: 768px) {
   .benefits-list {
@@ -479,6 +489,9 @@ img {
   .benefits-item {
     width: calc((100% - 24px) / 2);
   }
+.benefits-subtitle{
+    text-align: left;
+}
 }
 @media screen and (min-width: 1158px) {
   .section {
@@ -503,6 +516,14 @@ img {
   .benefits-item {
     width: calc((100% - 72px) / 4);
   }
+  .benefits-subtitle {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+  }
+  .benefits-text {
+      font-weight: 400;
+  }
 }
 /* team */
 
@@ -517,8 +538,9 @@ img {
   text-transform: capitalize;
 }
 .team-list {
+    
   display: flex;
-  flex-wrap: wrap;
+flex-wrap: wrap;
   gap: 72px;
 }
 .team-item {
@@ -543,9 +565,25 @@ img {
   background-color: #fff;
 }
 .team-soc-list {
+    
   display: flex;
   gap: 24px;
   justify-content: center;
+  
+}
+.team-subtitle {
+    margin-bottom: 8px;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 .team-soc-link {
   width: 40px;
@@ -575,11 +613,12 @@ img {
 }
 @media screen and (min-width: 1158px) {
     .team-list {
-        flex-wrap: nowrap;
-        gap: 24px;
+gap: 24px;
     }
 
     .team-item {
+        width: calc((100% - 72px) / 4);
         
     }
+    
 }
