@@ -3,48 +3,8 @@
 
 
 
-/* order */
-.order {
-  
-
-  
-}
 
 
-.order-button {
-  
-  
-  
-  
-  
-}
-
-
-.section {
-  padding: 120px 0;
-}
-/* benefits */
-.subtitles {
-  margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-.texts {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-.benefits-list {
-  display: flex;
-  gap: 24px;
-}
-
-.benefits-item {
-  width: calc((100% - 72px) / 4);
-}
 /* team */
 .team-title,
 .portfolio-title {
