@@ -706,6 +706,8 @@ img {
   flex-wrap: wrap;
   gap: 72px;
  justify-content: center;
+ 
+ 
 }
 .footer-logo {
   display: flex;
