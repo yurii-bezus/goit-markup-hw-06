@@ -62,25 +62,24 @@ img {
   margin: 0 auto;
 }
 .team .container {
-  max-width: 264px;
+  max-width: 296px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
-  .team .container,
-  .footer .container {
-    max-width: 552px;
+  .team .container{
+    max-width: 584px;
   }
+    
 }
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding: 0 15px;
   }
-  .team .container,
-  .footer .container {
+  .team .container {
     max-width: 1158px;
   }
 }
@@ -289,10 +288,11 @@ img {
   color: #4d5ae5;
 }
 .mobile-contacts {
+  margin-bottom: 48px;
 }
 
 .mobile-contacts-list {
-  margin-bottom: 48px;
+  
 }
 
 .mobile-contacts-item {
@@ -418,18 +418,17 @@ img {
     line-height: 1.07;
     max-width: 496px;
   }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .order {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url(../images/bg/Dark-bg-tab@2x-min.jpg);
+      }
+    }
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .order {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/bg/Dark-bg-tab@2x-min.jpg);
-  }
-}
+
 @media screen and (min-width: 1158px) {
   .order {
     padding-top: 188px;
@@ -444,19 +443,17 @@ img {
   .order-title {
     margin-bottom: 48px;
   }
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .order {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/bg/Dark-bg-desk@2x-min.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .order {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url(../images/bg/Dark-bg-desk@2x-min.jpg);
+      }
     }
-  }
-  
+}
+
 
 .section {
   padding: 96px 0;
@@ -848,7 +845,7 @@ img {
     padding: 100px 0;
   }
   .footer-container {
-    padding-left: 0;
+    padding-left: 15px;
     gap: 0;
   }
   .footer-subs {
